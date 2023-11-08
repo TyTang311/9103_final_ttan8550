@@ -1,6 +1,6 @@
 let raindrops = []; // Array of raindrop objects to store
 let slider; // Slider variable to control the number of raindrops
-let circleDiameter = 20; // Global variable defining the diameter of a circle for determining the size of the shape
+let circleDiameter = 25; // Maximum radius of fireworks
 
 class Raindrop {
   constructor() {
@@ -15,7 +15,7 @@ class Raindrop {
     this.y = height + random(height); // randomize the raindrop's vertical coordinate so that its initial position is below the canvas
     this.z = random(0, 20); // the "z-axis" value of the raindrop, which affects speed and size
     this.len = map(this.z, 0, 20, 20, 30); // map the length of the raindrops
-    this.yspeed = map(this.z, 0, 20, 1, 5); //  map the droplet's falling speed
+    this.yspeed = map(this.z, 0, 20, 3, 7); //  map the droplet's falling speed
     this.splashed = false; // check if the raindrop has splashed or not
     this.radius = 0; // initial radius is zero
     this.patternY = random(100, height * 8 / 9); // set the raindrop's y-axis coordinate range
