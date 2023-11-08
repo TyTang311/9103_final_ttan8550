@@ -1,7 +1,7 @@
 // Global variables to store circle patterns, circle diameter, and spacing between circles
 let patterns = [];
 let circleDiameter;
-let spacing = 30; // Define space between circles
+let spacing = 25; // Define space between circles
 
 
 function setup() {
